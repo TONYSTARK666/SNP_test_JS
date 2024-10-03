@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TODO List</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <h1 class="header__title">TODO List</h1>
+        </header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item all-t active-task">Все задачи</li>
+                <li class="nav__list-item done-t">Выполненные задачи</li>
+                <li class="nav__list-item now-t">Не выполненные задачи</li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container">
+                <form class="form">
+                    <input type="text" class="form__input" required />
+                    <button class="form__button">Добавить задачу</button>
+                </form>
+                <section class="todo-all">
+                    <ul class="todo-all-list"></ul>
+                </section>
+                <section class="todo-done">
+                    <ul class="todo-done-list"></ul>
+                </section>
+                <section class="todo-now">
+                    <ul class="todo-now-list"></ul>
+                </section>
+                <div class="buttons">
+                    <button class="delete-all">Удалить все задачи</button>
+                    <button class="delete-done">Удалить все выполненные задачи</button>
+                </div>
+            </div>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>

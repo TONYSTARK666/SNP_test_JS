@@ -1,0 +1,163 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: url("../img/AdobeStock_344028899.jpeg") no-repeat;
+    background-size: cover;
+}
+
+/* HEADER */
+
+.header {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.header__title {
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 7rem;
+
+    text-align: center;
+    padding: 50px;
+
+    border-bottom: 1px solid black;
+}
+
+/* NAVIGATION */
+
+.nav {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid black;
+}
+
+.nav__list-item {
+    font-size: 2rem;
+
+    text-align: center;
+    padding: 20px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    flex-grow: 1;
+}
+
+.nav__list-item:hover {
+    background-color: #a7a3a3;
+}
+
+.active-task {
+    background-color: #cccccc;
+}
+
+/* MAIN */
+
+.container {
+    max-width: 60vw;
+    margin: 0 auto;
+
+    margin-bottom: 100px;
+}
+
+/* FORM */
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    padding: 20px 0;
+}
+
+.form__input {
+    display: block;
+    flex-grow: 2;
+
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.form__button {
+    display: block;
+    flex-grow: 1;
+
+    font-size: 2rem;
+    padding: 10px;
+
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* TASKS */
+
+.todo-all,
+.todo-done,
+.todo-now {
+    border: 1px solid black;
+    min-height: 20vh;
+    margin-bottom: 20px;
+}
+
+.todo-done,
+.todo-now {
+    display: none;
+}
+
+.todo-all-list-item {
+    display: flex;
+    justify-content: space-between;
+
+    word-break: break-all;
+    font-size: 2.5rem;
+    padding: 10px 30px;
+
+    background-color: #cccccc7e;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.todo-all-list-item span {
+    background: url(https://img.icons8.com/?size=100&id=46&format=png&color=000000) no-repeat center;
+    background-size: contain;
+
+    min-width: 30px;
+    vertical-align: middle;
+}
+
+.check {
+    text-decoration: line-through;
+    background-color: #a7a3a3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.delete-all,
+.delete-done {
+    padding: 20px;
+    font-size: 2rem;
+    background-color: white;
+    border: 1px solid black;
+}
